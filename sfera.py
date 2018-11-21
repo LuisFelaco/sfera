@@ -1,6 +1,11 @@
 import math
 
 def sfera(raggio):
-	volume = (4./3.*math.pi*raggio**3)
+	volume = (4.0/3.0*math.pi)*raggio**3
 	return volume
-print (sfera(2))
+
+
+raggio = input ("Inserire il raggio della sfera:")
+raggio = int(raggio)
+ris = sfera(raggio)
+print (ris)
